@@ -2,12 +2,12 @@ let gold = 0;
 let goldLabel = document.querySelector(".gold-label");
 let multiplier = 1;
 let multiplierLabel = document.querySelector(".multiplier-label")
-let autoClicker =0;
+let autoClicker = 0;
 let autoClickerLabel = document.querySelector(".autoClicker-label")
 
 let button = document.querySelector(".cookie-button");
 let mutliplierButton = document.querySelector(".buy-multiplier")
-let autoclickerButton = document.querySelector("buy-autoclicker")
+let autoclickerButton = document.querySelector(".buy-autoclicker")
 
 let inventory = [];
 let inventoryList = document.querySelector(".inventory-list");
@@ -34,13 +34,12 @@ function buyAutoclicker(){
 // function Autoclick(){
 //     gold += autoClicker;
 // }
-var temp = setInterval(autoClick, 100);
+setInterval(autoClick, 1000);
 
 function autoClick() {
-    gold ++;
+    gold += autoClicker;
     update();
 }
-
 
 
 function update(){
