@@ -34,18 +34,20 @@ function buyAutoclicker(){
 // function Autoclick(){
 //     gold += autoClicker;
 // }
+var temp = setInterval(autoClick, 100);
 
 function autoClick() {
-gold += autoClicker;
-update()
+    gold ++;
+    update();
 }
 
-setInterval (autoClick, 1000);
+
 
 function update(){
     updateInventory();
     goldLabel.innerHTML = gold;
     multiplierLabel.innerHTML = multiplier;
+    autoClickerLabel.innerHTML = autoClicker;
 }
 
 function updateInventory(){
